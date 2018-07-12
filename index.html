@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CGPA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    *{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 45px;
+        background-color: teal;
+        color: white;
+        padding: 10px;
+        text-align: center;
+    }
+    </style>
+    <script >
+    const l1c = 2;
+    const l2c = 2;
+    const l3c = 2;
+    const Epc = 3;
+    const M2c = 4;
+    const M3c = 4;
+    const cc = 3;
+    const egc = 4;
+    const name = prompt("Enter Your Name :");
+    const l1g = prompt("Enter Your Chemistry Lab Grade Points(0~10):");
+    const l2g = prompt("Enter Your Physics lab Grade Points(0~10):");
+    const l3g = prompt("Enter Your Cp lab Grade Points:(0~10)");
+    const Epg = prompt("Enter Your Engineering Physics Grade Points(0~10):");
+    const M2g = prompt("Enter Your Mathematics 2 Grade Points(0~10):");
+    const M3g = prompt("Enter Your Mathematics 3 Grade Points(0~10):");
+    const cg = prompt("Enter Your CP in C Grade Points(0~10):");
+    const egg = prompt("Enter Your Engineering Graphics Grade Points(0~10):");
+    // prompt(name);
+    // prompt(l1g);
+    // prompt(l2g);
+    // prompt(l3g);
+    // prompt(Epg);
+    // prompt(M2g);
+    // prompt(M3g);
+    // prompt(cg);
+    // prompt(egc);
+    const l1 = (l1c*l1g);
+    const l2 = (l2c*l2g);
+    const l3 = (l3c*l3g);
+    const Ep = (Epc*Epg);
+    const M2 = (M2c*M2g);
+    const M3 = (M3c*M3g);
+    const c = (cc*cg);
+    const eg = (egc*egg);
+    const sum = (l1+l2+l3+Ep+M2+M3+c+eg);
+    const cgpa = sum/24;
+    //cgpa = ((l1c*l1g)+(l2c*l2g)+(l3c*l3g)+(Epc*Epg)+(M2c*M2g)+(M3c*M3g)+(cc*cg)+(egc*egg))/(24);
+    document.write("<h1>CGPA Calculator</h1><br>");
+    document.write(`Hey ${name}, Thanks For Using Our CGPA calculator --Suraj Kumar<br>`);
+    document.write(`Your Chemistry Lab Grade Points:${l1g}<br>`);
+    document.write(`Your Physics Lab Lab Grade Points:${l2g}<br>`);
+    document.write(`Your CP Lab Grade Points:${l3g}<br>`);
+    document.write(`Your Engineering Physics Grade Points:${Epg}<br>`);
+    document.write(`Your Mathematics 2 Grade Points:${M2g}<br>`);
+    document.write(`Your Mathematics 3 Grade Points:${M3g}<br>`);
+    document.write(`Your Cp in C Grade Points:${cg}</br>`);
+    document.write(`Your Engineering Graphics Lab Grade Points:${egg}<br>`);
+    document.write(`Your Cgpa is :${cgpa}<br>`);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
